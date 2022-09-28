@@ -27,4 +27,32 @@ The main solution verilog code for the part-2 of lab-1 should be inside the file
 Do not changed the names of the output ports or the module name for your top file.
 
 ## Change the YML file inside EC311_Lab1_Template/.github/workflows/classroom.yml
-Do the following steps so that your code can be graded automatically.
+
+Do the following steps so that your code can be graded automatically:
+ - Open the file EC311_Lab1_Template/.github/workflows/verify.yml
+ - Copy the code from line-9 till the end, the following lines: 
+```
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+    
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+
+    - name: Install dependencies
+      run: |
+        pip3 install -r requirements.txt
+        sudo apt install -y --no-install-recommends iverilog
+    - name: Verify with cocotb & icarus
+      run: |
+        pytest register/tb axis_fifo/tb
+```
+ 
