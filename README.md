@@ -14,4 +14,4 @@ Make the following 2 folders in the main folder ("EC311_Lab1_Template") using th
 You will place the solution code for part-1 of lab-1, the 4-bit binary adder-subtractor in the folder named "add_sub_4_bit", and the solution code for part-2 of lab-1, the 4-bit Arithmetic-Logic Unit (ALU), will be placed in the folder named "alu_4_bit".
 
 ### Lab-1 Part-1 Folder Structure & Signal Naming
-The main code file for the part-1 of lab-1 should be inside the folder EC311_Lab1_Template/add_sub_4_bit (path of the folder) and the name of the file should be "add_sub_4_bit.v" and inside add_sub_4_bit.v the name of the module should also be "add_sub_4_bit" (i.e., it should be instantiated as *module add_sub_4_bit*) 
+The main solution verilog file (also called the top file) for the part-1 of lab-1 should be inside the folder EC311_Lab1_Template/add_sub_4_bit (path of the folder) and the name of the verilog file should be "add_sub_4_bit.v" and inside the verilog file add_sub_4_bit.v the name of the module should also be "add_sub_4_bit" (i.e., it should be instantiated as *module add_sub_4_bit*) 
