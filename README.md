@@ -25,3 +25,6 @@ The main solution verilog code for the part-2 of lab-1 should be inside the file
 - *EC311_Lab1_Template/alu_4_bit/alu_4_bit.v*
 
 Do not changed the names of the output ports or the module name for your top file.
+
+## Change the YML file inside EC311_Lab1_Template/.github/workflows/classroom.yml
+Do the following steps so that your code can be graded automatically.
