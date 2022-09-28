@@ -1,0 +1,39 @@
+
+name: GitHub Classroom Workflow
+
+on: [push]
+
+permissions:
+  checks: write
+  actions: read
+  contents: read
+
+jobs:
+  build:
+    name: Autograding
+    runs-on: ubuntu-latest
+     
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+    
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+
+    - name: Install dependencies
+      run: |
+        pip3 install -r requirements.txt
+        sudo apt install -y --no-install-recommends iverilog
+    - name: Using autograding
+      uses: education/autograding@v1
+    - name: Verify with cocotb & icarus
+      run: |
+        pytest add_sub_4_bit/tb alu_4_bit/tb
