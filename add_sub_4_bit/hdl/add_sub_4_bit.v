@@ -9,14 +9,14 @@ module add_sub_4_bit #
 )
 (
   // The inputs 
-  input wire [WIDTH-1:0]        A_input,
-  input wire [WIDTH-1:0]        B_input,
-  input wire                    M_control_input,
+  input wire [WIDTH-1:0]        A_i,
+  input wire [WIDTH-1:0]        B_i,
+  input wire                    M_i,
 
   // The outputs
-  output wire                   V_out,
-  output wire                   C_out,
-  output wire [WIDTH-1:0]       S_output
+  output wire                   V_o,
+  output wire                   C_o,
+  output wire [WIDTH-1:0]       S_o
 
 );
 

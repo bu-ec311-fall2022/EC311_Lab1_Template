@@ -11,12 +11,12 @@ module alu_4_bit #
 )
 (
   // The inputs 
-  input wire [INPUT_WIDTH-1:0]      A_input,
-  input wire [INPUT_WIDTH-1:0]      B_input,
-  input wire [SELECT_WIDTH-1:0]     S_input,
+  input wire [INPUT_WIDTH-1:0]      A_i,
+  input wire [INPUT_WIDTH-1:0]      B_i,
+  input wire [SELECT_WIDTH-1:0]     S_i,
 
   // The outputs
-  output wire [OUTPUT_WIDTH-1:0]           Y_output
+  output wire [OUTPUT_WIDTH-1:0]           Y_o
 
 );
 
