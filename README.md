@@ -36,7 +36,7 @@ Upload your testbench files here:
 
 ## Change the YML file inside EC311_Lab1_Template/.github/workflows/classroom.yml
 
-Do the following steps so that your code can be graded automatically:
+Do the following steps so that your code can be graded:
  - Copy the entire contents of the file *EC311_Lab1_Template/.github/workflows/copy_to_classroom.yml* and paste it to the file **EC311_Lab1_Template/.github/workflows/classroom.yml** (remove the entire contents of classroom.yml first)
 
 
