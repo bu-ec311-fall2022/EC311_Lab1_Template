@@ -17,12 +17,18 @@ You will place the solution code for part-1 of lab-1, i.e., the 4-bit binary add
 The main solution code for the part-1 of lab-1 should be inside the file "add_sub_4_bit.v" in the following path:
 - *EC311_Lab1_Template/add_sub_4_bit/hdl/add_sub_4_bit.v*
 
+Upload your testbench files here:
+- *EC311_Lab1_Template/add_sub_4_bit/tb*
+
 Do not changed the names of the input/output ports or the module name for your top file.
 
 
 ### Lab-1 Part-2 Folder Structure & Signal Naming
 The main solution verilog code for the part-2 of lab-1 should be inside the file "alu_4_bit.v" in the following path:
 - *EC311_Lab1_Template/alu_4_bit/hdl/alu_4_bit.v*
+
+Upload your testbench files here:
+- *EC311_Lab1_Template/alu_4_bit/tb*
 
 **Do not changed the names of the input/output ports or the module name for the top file.**
 
