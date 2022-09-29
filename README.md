@@ -16,25 +16,24 @@ You will place the solution code for part-1 of lab-1, i.e., the 4-bit binary add
 ### Lab-1 Part-1 Folder Structure & Signal Naming
 The main solution code for the part-1 of lab-1 should be inside the file "add_sub_4_bit.v" in the following path:
 - *EC311_Lab1_Template/add_sub_4_bit/hdl/add_sub_4_bit.v*
+- Verilog files of other modules that are being instantiated in the top module "add_sub_4_bit.v" should also be present in the following path: *EC311_Lab1_Template/add_sub_4_bit/hdl/*
+- Do not change the names of the input/output ports or the module name for your top file.
 
 Upload your testbench files here:
 - *EC311_Lab1_Template/add_sub_4_bit/tb*
 
-Do not changed the names of the input/output ports or the module name for your top file.
-
-
 ### Lab-1 Part-2 Folder Structure & Signal Naming
 The main solution verilog code for the part-2 of lab-1 should be inside the file "alu_4_bit.v" in the following path:
 - *EC311_Lab1_Template/alu_4_bit/hdl/alu_4_bit.v*
+- Verilog files of other modules that are being instantiated in the top module "alu_4_bit.v" should also be present in the following path: *EC311_Lab1_Template/alu_4_bit/hdl/*
+- Do not change the names of the input/output ports or the module name for your top file.
 
 Upload your testbench files here:
 - *EC311_Lab1_Template/alu_4_bit/tb*
 
-**Do not changed the names of the input/output ports or the module name for the top file.**
-
 ## Change the YML file inside EC311_Lab1_Template/.github/workflows/classroom.yml
 
-Do the following steps so that your code can be graded automatically:
+Do the following steps so that your code can be graded:
  - Copy the entire contents of the file *EC311_Lab1_Template/.github/workflows/copy_to_classroom.yml* and paste it to the file **EC311_Lab1_Template/.github/workflows/classroom.yml** (remove the entire contents of classroom.yml first)
 
 
